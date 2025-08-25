@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>DunGdot&#39;s Blog 앜</title>
+
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready( function() {
+      $("#list").load("list/list.html");
+    });
+    </script>
+
+
+    <style>
+      #grid
+      {
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+      }
+      a{
+        text-decoration: none;
+      }
+      h1{
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 1px solid gray;
+        margin:0px;
+        padding:20px;
+      }
+      #grid ol{
+          padding-left:33px;
+      }
+      body{
+        margin: 0px;
+      }
+      footer
+      {
+        border-top: 1px solid gray;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1><a href="index.html">WEB</a></h1>
+    <nav></nav>
+    <div id="grid">
+      <div
+        style=" border-right: 1px solid gray; width : 100px; margin: 0px; padding-right:30px;"
+        id="list"></div>
+
+      <article style="text-align:center;">
+          <img src="images/web/7840.jpeg">
+          <div >몰래 하는 Web</div>
+      </article>
+    </div>
+    <footer></footer>
+  </body>
+
+</html>
